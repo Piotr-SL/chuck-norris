@@ -1,0 +1,11 @@
+<h1>Chuck Norris Jokes</h1>
+
+<ul>
+  <li 
+    *ngFor="let category of categoriesArray" 
+    (click)="clickOnCategory(category)"
+    [class.selected]='clickedCategory === category'>
+    {{category}}
+  </li>
+</ul>
+<p (click)="handleClick()">{{ joke }}</p>
